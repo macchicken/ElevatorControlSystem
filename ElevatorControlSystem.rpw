@@ -1,0 +1,178 @@
+I-Logix-RPY-Archive version 8.11.0 * 9499822
+{ CGEMdiWorkspace 
+	- stubList = { IRPYRawContainer 
+		- size = 0;
+	}
+	- isLoadOnDemand = 0;
+	- myViewsWithID = { IRPYRawContainer 
+		- size = 5;
+		- value = 
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 156;
+				- m_nTop = 156;
+				- m_nRight = 1033;
+				- m_nBottom = 498;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Elevator";
+				- _name = "StatechartDiagram";
+				- _id = GUID ab7c18d9-fbad-43af-9f1c-b53ea98d5e84;
+			}
+			- _UpLeft = 0 100 ;
+			- _DownRight = 893 400 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 4;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 52;
+				- m_nTop = 52;
+				- m_nRight = 901;
+				- m_nBottom = 389;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Elevator";
+				- _name = "StatechartDiagram";
+				- _id = GUID ab7c18d9-fbad-43af-9f1c-b53ea98d5e84;
+			}
+			- _UpLeft = 0 28 ;
+			- _DownRight = 812 305 ;
+			- _instanceName = "SystemController[0]->itsElevator[0]";
+			- m_nDiagramIndex = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 0;
+				- m_nTop = 0;
+				- m_nRight = 823;
+				- m_nBottom = 342;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Floor";
+				- _name = "StatechartDiagram";
+				- _id = GUID 97492a20-9a0e-4f68-aeab-64a2ef5221a9;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 786 282 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 3;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 26;
+				- m_nTop = 26;
+				- m_nRight = 849;
+				- m_nBottom = 368;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStateChartDiagram";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "LevelButton";
+				- _name = "StatechartDiagram";
+				- _id = GUID 3b8106a8-b551-499f-8408-f47abdfeba28;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 786 282 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 2;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 52;
+				- m_nTop = 52;
+				- m_nRight = 875;
+				- m_nBottom = 394;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IPanelDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "paneldiagram_1";
+				- _id = GUID 24d6188f-ca67-4efe-8853-eed84c4b6d25;
+			}
+			- _UpLeft = 0 0 ;
+			- _DownRight = 958 477 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 1;
+		}
+	}
+	- _fullName = "D:\\IBM\\Rational\\Rhapsody\\ElevatorControlSystem\\ElevatorControlSystem";
+	- m_SearchScopeList = { IRPYRawContainer 
+		- size = 0;
+	}
+	- bUsingCustomBrowserView = 0;
+	- bUsingQueries = 0;
+	- bApplyOnDiagrams = 0;
+	- liQueryIDs = { IRPYRawContainer 
+		- size = 0;
+	}
+	- liElementTypes = { IRPYRawContainer 
+		- size = 0;
+	}
+
+	- m_favoritesTree = {
+		count=1;
+		{ - favoritesItem
+			generation = 0;
+			name = Favorites;
+			idOrFolder = folder;
+		}
+	}
+
+	- mapOslcRmCollections = { IRPYRawContainer 
+		- size = 0;
+	}
+}
+

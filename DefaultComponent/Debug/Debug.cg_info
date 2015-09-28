@@ -1,0 +1,72 @@
+I-Logix-RPY-Archive version 8.11.0 * 9499822
+
+- m_fileModifyTime = { IRPYRawContainer 
+	- size = 10;
+	- value = "DefaultComponent\\Debug\\Default.cpp" 9.28.2015::10:21:56
+	"DefaultComponent\\Debug\\Default.h" 9.28.2015::10:21:56
+	"DefaultComponent\\Debug\\Elevator.cpp" 9.28.2015::10:31:48
+	"DefaultComponent\\Debug\\Elevator.h" 9.28.2015::10:31:48
+	"DefaultComponent\\Debug\\Floor.cpp" 9.28.2015::11:20:38
+	"DefaultComponent\\Debug\\Floor.h" 9.28.2015::11:20:38
+	"DefaultComponent\\Debug\\LevelButton.cpp" 9.28.2015::10:31:48
+	"DefaultComponent\\Debug\\LevelButton.h" 9.28.2015::10:31:48
+	"DefaultComponent\\Debug\\SystemController.cpp" 9.28.2015::10:21:56
+	"DefaultComponent\\Debug\\SystemController.h" 9.28.2015::10:21:56
+	
+}
+- size = 6;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "";
+	- _name = "Floor";
+	- _id = GUID 1fd8a700-e7f5-42ab-8b56-3291f115e3cc;
+}
+- genTime = 9.28.2015::11:20:38;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "";
+	- _name = "Elevator";
+	- _id = GUID e2d4b5e4-957c-4e08-9817-ef7a4ec4e4c9;
+}
+- genTime = 9.28.2015::10:31:48;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "";
+	- _name = "LevelButton";
+	- _id = GUID db606917-94c2-4b8a-8704-33727cfd926f;
+}
+- genTime = 9.28.2015::10:31:48;
+- hElement = { IHandle 
+	- _m2Class = "ISubsystem";
+	- _filename = "Default.sbs";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "Default";
+	- _id = GUID 7888e5a7-3deb-4e9a-aa52-542a3bdcede8;
+}
+- genTime = 9.28.2015::11:20:38;
+- hElement = { IHandle 
+	- _m2Class = "ICodeGenConfigInfo";
+	- _filename = "DefaultComponent.cmp";
+	- _subsystem = "";
+	- _class = "";
+	- _name = "DefaultComponent\\Debug";
+	- _id = GUID 6c4090a0-b048-4a6a-b6b7-60db34f185ad;
+}
+- genTime = 9.28.2015::11:20:38;
+- hElement = { IHandle 
+	- _m2Class = "IClass";
+	- _filename = "Default.sbs";
+	- _subsystem = "Default";
+	- _class = "";
+	- _name = "SystemController";
+	- _id = GUID 68e2b1bc-ef93-44a5-9c7a-a03528d51cbd;
+}
+- genTime = 9.28.2015::10:21:56;
+

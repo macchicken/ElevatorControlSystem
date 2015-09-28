@@ -1,0 +1,11 @@
+I-Logix-RPY-Archive version 8.11.0 * 9499822
+
+- filesTable = { IRPYRawContainer 
+	- size = 4;
+	- value = "ElevatorControlSystem.rpy" ""
+	"ElevatorControlSystem_rpy\\Default.sbs" "Default"
+	"ElevatorControlSystem_rpy\\DefaultComponent.cmp" "DefaultComponent"
+	"ElevatorControlSystem_rpy\\std.sbs" "Default::std"
+	
+}
+

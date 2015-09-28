@@ -1,0 +1,87 @@
+I-Logix-RPY-Archive version 8.11.0 C++ 9499822
+{ ISubsystem 
+	- _ownerHandle = { IHandle 
+		- _m2Class = "ISubsystem";
+		- _filename = "Default.sbs";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "Default";
+		- _id = GUID 7888e5a7-3deb-4e9a-aa52-542a3bdcede8;
+	}
+	- _id = GUID 1572de2c-2215-46be-8b6f-b1d995e0edcd;
+	- _myState = 8192;
+	- _properties = { IPropertyContainer 
+		- Subjects = { IRPYRawContainer 
+			- size = 2;
+			- value = 
+			{ IPropertySubject 
+				- _Name = "CG";
+				- Metaclasses = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertyMetaclass 
+						- _Name = "Package";
+						- Properties = { IRPYRawContainer 
+							- size = 1;
+							- value = 
+							{ IProperty 
+								- _Name = "UseAsExternal";
+								- _Value = "True";
+								- _Type = Bool;
+							}
+						}
+					}
+				}
+			}
+			{ IPropertySubject 
+				- _Name = "CPP_CG";
+				- Metaclasses = { IRPYRawContainer 
+					- size = 1;
+					- value = 
+					{ IPropertyMetaclass 
+						- _Name = "Package";
+						- Properties = { IRPYRawContainer 
+							- size = 2;
+							- value = 
+							{ IProperty 
+								- _Name = "DefineNameSpace";
+								- _Value = "True";
+								- _Type = Bool;
+							}
+							{ IProperty 
+								- _Name = "GenerateDirectory";
+								- _Value = "False";
+								- _Type = Bool;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	- _name = "std";
+	- _modifiedTimeWeak = 9.28.2015::5:31:43;
+	- weakCGTime = 9.28.2015::5:31:43;
+	- strongCGTime = 1.2.1990::0:0:0;
+	- _defaultComposite = GUID 7b16ecf1-dee5-4f10-99a0-fa49753b4c0c;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 1;
+		- value = 
+		{ IClass 
+			- _id = GUID 7b16ecf1-dee5-4f10-99a0-fa49753b4c0c;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- _modifiedTimeWeak = 8.30.2015::7:39:16;
+			- weakCGTime = 8.30.2015::7:39:16;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 1.2.1990::0:0:0;
+}
+
