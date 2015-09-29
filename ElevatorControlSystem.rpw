@@ -5,13 +5,13 @@ I-Logix-RPY-Archive version 8.11.0 * 9499822
 	}
 	- isLoadOnDemand = 0;
 	- myViewsWithID = { IRPYRawContainer 
-		- size = 5;
+		- size = 4;
 		- value = 
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
@@ -30,38 +30,10 @@ I-Logix-RPY-Archive version 8.11.0 * 9499822
 				- _name = "StatechartDiagram";
 				- _id = GUID ab7c18d9-fbad-43af-9f1c-b53ea98d5e84;
 			}
-			- _UpLeft = 0 100 ;
-			- _DownRight = 893 400 ;
+			- _UpLeft = 0 20 ;
+			- _DownRight = 964 497 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 4;
-		}
-		{ CGEMdiDiagramParams 
-			- _placement = { CCommon_WINDOWPLACEMENT 
-				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
-				- m_ptMinPositionX = -1;
-				- m_ptMinPositionY = -1;
-				- m_ptMaxPositionX = -8;
-				- m_ptMaxPositionY = -31;
-				- m_nLeft = 52;
-				- m_nTop = 52;
-				- m_nRight = 901;
-				- m_nBottom = 389;
-			}
-			- _wasOpenedOnCloseProject = 1;
-			- _theDiagram = { IHandle 
-				- _m2Class = "IStateChartDiagram";
-				- _filename = "Default.sbs";
-				- _subsystem = "Default";
-				- _class = "Elevator";
-				- _name = "StatechartDiagram";
-				- _id = GUID ab7c18d9-fbad-43af-9f1c-b53ea98d5e84;
-			}
-			- _UpLeft = 0 28 ;
-			- _DownRight = 812 305 ;
-			- _instanceName = "SystemController[0]->itsElevator[0]";
-			- m_nDiagramIndex = 0;
+			- m_nDiagramIndex = 3;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -89,7 +61,7 @@ I-Logix-RPY-Archive version 8.11.0 * 9499822
 			- _UpLeft = 0 0 ;
 			- _DownRight = 786 282 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 3;
+			- m_nDiagramIndex = 2;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -117,13 +89,13 @@ I-Logix-RPY-Archive version 8.11.0 * 9499822
 			- _UpLeft = 0 0 ;
 			- _DownRight = 786 282 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 2;
+			- m_nDiagramIndex = 1;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 2;
-				- m_showCmd = 3;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
@@ -142,10 +114,10 @@ I-Logix-RPY-Archive version 8.11.0 * 9499822
 				- _name = "paneldiagram_1";
 				- _id = GUID 24d6188f-ca67-4efe-8853-eed84c4b6d25;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 958 477 ;
+			- _UpLeft = 20 -26 ;
+			- _DownRight = 806 256 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 1;
+			- m_nDiagramIndex = 0;
 		}
 	}
 	- _fullName = "D:\\IBM\\Rational\\Rhapsody\\ElevatorControlSystem\\ElevatorControlSystem";

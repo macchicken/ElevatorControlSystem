@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Debug
 	Model Element	: Elevator
-//!	Generated Date	: Mon, 28, Sep 2015  
+//!	Generated Date	: Tue, 29, Sep 2015  
 	File Path	: DefaultComponent\Debug\Elevator.h
 *********************************************************************/
 
@@ -76,6 +76,9 @@ public :
     //## operation haveUpRequests()
     bool haveUpRequests();
     
+    //## operation load()
+    void load();
+    
     //## operation move()
     void move();
     
@@ -88,7 +91,22 @@ public :
     //## operation setUpRequests(int,int)
     void setUpRequests(int level, int i);
     
+    //## operation unLoad()
+    void unLoad();
+    
     ////    Additional operations    ////
+    
+    //## auto_generated
+    int getMAX_LOAD() const;
+    
+    //## auto_generated
+    void setMAX_LOAD(int p_MAX_LOAD);
+    
+    //## auto_generated
+    int getCurrLoad() const;
+    
+    //## auto_generated
+    void setCurrLoad(int p_currLoad);
     
     //## auto_generated
     void setCurrentLevel(int p_currentLevel);
@@ -107,6 +125,12 @@ public :
     
     //## auto_generated
     void setMode(int p_mode);
+    
+    //## auto_generated
+    int getOverLoaded() const;
+    
+    //## auto_generated
+    void setOverLoaded(int p_overLoaded);
     
     //## auto_generated
     int getStop() const;
@@ -145,6 +169,10 @@ protected :
     
     ////    Attributes    ////
     
+    int MAX_LOAD;		//## attribute MAX_LOAD
+    
+    int currLoad;		//## attribute currLoad
+    
     int currentLevel;		//## attribute currentLevel
     
     int direction;		//## attribute direction
@@ -154,6 +182,8 @@ protected :
     int downRequests[5];		//## attribute downRequests
     
     int mode;		//## attribute mode
+    
+    int overLoaded;		//## attribute overLoaded
     
     int stop;		//## attribute stop
     
@@ -298,11 +328,18 @@ public :
     void state_1_entDef();
     
     //## statechart_method
+    void state_1_exit();
+    
+    //## statechart_method
     IOxfReactive::TakeEventStatus state_1_processEvent();
     
     // running:
     //## statechart_method
     inline bool running_IN() const;
+    
+    // overLoad:
+    //## statechart_method
+    inline bool overLoad_IN() const;
     
     // idle:
     //## statechart_method
@@ -314,6 +351,9 @@ public :
     // door_open:
     //## statechart_method
     inline bool door_open_IN() const;
+    
+    //## statechart_method
+    IOxfReactive::TakeEventStatus door_open_handleEvent();
     
     ////    Framework    ////
 
@@ -339,8 +379,9 @@ protected :
         activated = 15,
         state_1 = 16,
         running = 17,
-        idle = 18,
-        door_open = 19
+        overLoad = 18,
+        idle = 19,
+        door_open = 20
     };
     
     int rootState_subState;
@@ -439,6 +480,9 @@ public :
     void running_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
+    void overLoad_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
     void idle_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
@@ -517,6 +561,10 @@ inline bool Elevator::state_1_IN() const {
 
 inline bool Elevator::running_IN() const {
     return state_1_subState == running;
+}
+
+inline bool Elevator::overLoad_IN() const {
+    return state_1_subState == overLoad;
 }
 
 inline bool Elevator::idle_IN() const {

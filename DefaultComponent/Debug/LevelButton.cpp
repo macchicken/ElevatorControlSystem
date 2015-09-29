@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Debug
 	Model Element	: LevelButton
-//!	Generated Date	: Mon, 28, Sep 2015  
+//!	Generated Date	: Tue, 29, Sep 2015  
 	File Path	: DefaultComponent\Debug\LevelButton.cpp
 *********************************************************************/
 
@@ -16,6 +16,8 @@
 
 //## auto_generated
 #include "LevelButton.h"
+//## auto_generated
+#include <iostream>
 //#[ ignore
 #define Default_LevelButton_LevelButton_SERIALIZE OM_NO_OP
 
@@ -27,6 +29,9 @@
 //## package Default
 
 //## class LevelButton
+
+using namespace std;
+
 LevelButton::LevelButton(IOxfActive* theActiveContext) {
     NOTIFY_REACTIVE_CONSTRUCTOR(LevelButton, LevelButton(), 0, Default_LevelButton_LevelButton_SERIALIZE);
     setActiveContext(theActiveContext, false);

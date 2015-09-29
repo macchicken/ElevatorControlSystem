@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Debug
 	Model Element	: Default
-//!	Generated Date	: Mon, 28, Sep 2015  
+//!	Generated Date	: Tue, 29, Sep 2015  
 	File Path	: DefaultComponent\Debug\Default.cpp
 *********************************************************************/
 
@@ -88,6 +88,18 @@
 #define evLevelButtonOn_UNSERIALIZE OM_NO_OP
 
 #define evLevelButtonOn_CONSTRUCTOR evLevelButtonOn()
+
+#define evLoad_SERIALIZE OM_NO_OP
+
+#define evLoad_UNSERIALIZE OM_NO_OP
+
+#define evLoad_CONSTRUCTOR evLoad()
+
+#define evUnload_SERIALIZE OM_NO_OP
+
+#define evUnload_UNSERIALIZE OM_NO_OP
+
+#define evUnload_CONSTRUCTOR evUnload()
 //#]
 
 //## package Default
@@ -233,6 +245,30 @@ bool evLevelButtonOn::isTypeOf(const short id) const {
 }
 
 IMPLEMENT_META_EVENT_P(evLevelButtonOn, Default, Default, evLevelButtonOn())
+
+//## event evLoad()
+evLoad::evLoad() {
+    NOTIFY_EVENT_CONSTRUCTOR(evLoad)
+    setId(evLoad_Default_id);
+}
+
+bool evLoad::isTypeOf(const short id) const {
+    return (evLoad_Default_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(evLoad, Default, Default, evLoad())
+
+//## event evUnload()
+evUnload::evUnload() {
+    NOTIFY_EVENT_CONSTRUCTOR(evUnload)
+    setId(evUnload_Default_id);
+}
+
+bool evUnload::isTypeOf(const short id) const {
+    return (evUnload_Default_id==id);
+}
+
+IMPLEMENT_META_EVENT_P(evUnload, Default, Default, evUnload())
 
 /*********************************************************************
 	File Path	: DefaultComponent\Debug\Default.cpp

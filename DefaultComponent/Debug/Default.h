@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Debug
 	Model Element	: Default
-//!	Generated Date	: Mon, 28, Sep 2015  
+//!	Generated Date	: Tue, 29, Sep 2015  
 	File Path	: DefaultComponent\Debug\Default.h
 *********************************************************************/
 
@@ -51,6 +51,10 @@ class SystemController;
 #define evUpButton_Default_id 18610
 
 #define evLevelButtonOn_Default_id 18611
+
+#define evLoad_Default_id 18612
+
+#define evUnload_Default_id 18613
 //#]
 
 //## package Default
@@ -372,6 +376,64 @@ public :
 //#[ ignore
 class OMAnimatedevLevelButtonOn : virtual public AOMEvent {
     DECLARE_META_EVENT(evLevelButtonOn)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event evLoad()
+class evLoad : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevLoad;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evLoad();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevLoad : virtual public AOMEvent {
+    DECLARE_META_EVENT(evLoad)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//## event evUnload()
+class evUnload : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevUnload;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evUnload();
+    
+    ////    Framework operations    ////
+    
+    //## statechart_method
+    virtual bool isTypeOf(const short id) const;
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevUnload : virtual public AOMEvent {
+    DECLARE_META_EVENT(evUnload)
 };
 //#]
 #endif // _OMINSTRUMENT

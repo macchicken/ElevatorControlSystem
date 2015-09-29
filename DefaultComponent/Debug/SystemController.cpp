@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Debug
 	Model Element	: SystemController
-//!	Generated Date	: Mon, 28, Sep 2015  
+//!	Generated Date	: Tue, 29, Sep 2015  
 	File Path	: DefaultComponent\Debug\SystemController.cpp
 *********************************************************************/
 
@@ -14,6 +14,8 @@
 
 //## auto_generated
 #include "SystemController.h"
+//## auto_generated
+#include <iostream>
 //#[ ignore
 #define Default_SystemController_notifyState_SERIALIZE \
     aomsmethod->addAttribute("direction", x2String(direction));\
@@ -28,6 +30,9 @@
 //## package Default
 
 //## class SystemController
+
+using namespace std;
+
 SystemController::SystemController(IOxfActive* theActiveContext) {
     NOTIFY_REACTIVE_CONSTRUCTOR(SystemController, SystemController(), 0, Default_SystemController_SystemController_SERIALIZE);
     setActiveContext(theActiveContext, false);

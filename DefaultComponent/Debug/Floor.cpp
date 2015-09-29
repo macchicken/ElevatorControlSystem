@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: Debug
 	Model Element	: Floor
-//!	Generated Date	: Mon, 28, Sep 2015  
+//!	Generated Date	: Tue, 29, Sep 2015  
 	File Path	: DefaultComponent\Debug\Floor.cpp
 *********************************************************************/
 
@@ -18,6 +18,8 @@
 #include "Floor.h"
 //## link system
 #include "SystemController.h"
+//## auto_generated
+#include <iostream>
 //#[ ignore
 #define Default_Floor_Floor_SERIALIZE OM_NO_OP
 
@@ -39,6 +41,9 @@
 //## package Default
 
 //## class Floor
+
+using namespace std;
+
 Floor::Floor(IOxfActive* theActiveContext) {
     NOTIFY_REACTIVE_CONSTRUCTOR(Floor, Floor(), 0, Default_Floor_Floor_SERIALIZE);
     setActiveContext(theActiveContext, false);
