@@ -75,15 +75,11 @@ Elevator::Elevator(IOxfActive* theActiveContext) : currLoad(0), currentLevel(1),
     //#[ operation Elevator()
     currentLevel = 1;
     currLoad=0;
-    doorOpen=0; 
+    doorOpen=0;
+    MAX_LOAD=800; 
     for (int i = 0; i < 5; i++) {
     	upRequests[i] = 0;
     	downRequests[i] = 0;
-    }
-    if (mode==1){
-    	MAX_LOAD=8;
-    }else if (mode==2){
-    	MAX_LOAD=800;
     }
     //#]
 }
@@ -203,11 +199,7 @@ bool Elevator::haveUpRequests() {
 void Elevator::load() {
     NOTIFY_OPERATION(load, load(), 0, Default_Elevator_load_SERIALIZE);
     //#[ operation load()
-    if (mode==1){
-    	currLoad++;
-    }else if (mode==2){
-    	currLoad+=100;
-    }
+    currLoad+=60;
     //#]
 }
 
@@ -293,11 +285,7 @@ void Elevator::unLoad() {
     NOTIFY_OPERATION(unLoad, unLoad(), 0, Default_Elevator_unLoad_SERIALIZE);
     //#[ operation unLoad()
     if (currLoad>0){
-    	if (mode==1){
-    		currLoad--;
-    	}else if (mode==2){
-    		currLoad-=100;
-    	}
+    	currLoad-=60;
     }
     //#]
 }

@@ -28,7 +28,7 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 		}
 	}
 	- _name = "Default";
-	- _modifiedTimeWeak = 9.29.2015::9:41:10;
+	- _modifiedTimeWeak = 9.29.2015::10:0:53;
 	- _lastID = 14;
 	- Declaratives = { IRPYRawContainer 
 		- size = 1;
@@ -38,7 +38,7 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 			- _id = GUID 1572de2c-2215-46be-8b6f-b1d995e0edcd;
 		}
 	}
-	- weakCGTime = 9.29.2015::9:41:10;
+	- weakCGTime = 9.29.2015::10:0:53;
 	- strongCGTime = 9.29.2015::5:46:35;
 	- _defaultComposite = GUID 3a07a030-376c-40b2-9eae-e80dfb87bd25;
 	- _eventsBaseID = 18601;
@@ -87,7 +87,7 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 				}
 			}
 			- _name = "Elevator";
-			- _modifiedTimeWeak = 9.29.2015::9:41:20;
+			- _modifiedTimeWeak = 9.29.2015::10:0:53;
 			- _theMainDiagram = { IHandle 
 				- _m2Class = "IDiagram";
 				- _filename = "";
@@ -97,7 +97,7 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 				- _id = GUID d77efad2-b544-4653-97b7-40fea42b9e6e;
 			}
 			- _lastID = 29;
-			- weakCGTime = 9.29.2015::9:41:20;
+			- weakCGTime = 9.29.2015::10:0:53;
 			- strongCGTime = 9.29.2015::5:45:51;
 			- Operations = { IRPYRawContainer 
 				- size = 24;
@@ -105,7 +105,7 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 				{ IConstructor 
 					- _id = GUID 1788ae82-ce46-47c2-9e43-6de0f4f0f245;
 					- _myState = 8192;
-					- _modifiedTimeWeak = 9.29.2015::8:16:42;
+					- _modifiedTimeWeak = 9.29.2015::9:59:58;
 					- _virtual = 0;
 					- Args = { IRPYRawContainer 
 						- size = 0;
@@ -122,15 +122,11 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 					- _itsBody = { IBody 
 						- _bodyData = "currentLevel = 1;
 currLoad=0;
-doorOpen=0; 
+doorOpen=0;
+MAX_LOAD=800; 
 for (int i = 0; i < 5; i++) {
 	upRequests[i] = 0;
 	downRequests[i] = 0;
-}
-if (mode==1){
-	MAX_LOAD=8;
-}else if (mode==2){
-	MAX_LOAD=800;
 }";
 					}
 					- _initializer = "";
@@ -758,7 +754,7 @@ if (doorOpen == 1){
 					- _id = GUID 57c5c7f9-13e6-4283-900a-b2f280c69ec4;
 					- _myState = 8192;
 					- _name = "load";
-					- _modifiedTimeWeak = 9.29.2015::7:37:38;
+					- _modifiedTimeWeak = 9.29.2015::10:0:27;
 					- _virtual = 0;
 					- Args = { IRPYRawContainer 
 						- size = 0;
@@ -778,18 +774,14 @@ if (doorOpen == 1){
 					- _static = 0;
 					- _constant = 0;
 					- _itsBody = { IBody 
-						- _bodyData = "if (mode==1){
-	currLoad++;
-}else if (mode==2){
-	currLoad+=100;
-}";
+						- _bodyData = "currLoad+=60;";
 					}
 				}
 				{ IPrimitiveOperation 
 					- _id = GUID a7ccd06c-ecbf-4baf-9ce7-4468f610421d;
 					- _myState = 8192;
 					- _name = "unLoad";
-					- _modifiedTimeWeak = 9.29.2015::7:38:3;
+					- _modifiedTimeWeak = 9.29.2015::10:0:40;
 					- _virtual = 0;
 					- Args = { IRPYRawContainer 
 						- size = 0;
@@ -810,11 +802,7 @@ if (doorOpen == 1){
 					- _constant = 0;
 					- _itsBody = { IBody 
 						- _bodyData = "if (currLoad>0){
-	if (mode==1){
-		currLoad--;
-	}else if (mode==2){
-		currLoad-=100;
-	}
+	currLoad-=60;
 }";
 					}
 				}
@@ -1112,9 +1100,9 @@ if (doorOpen == 1){
 					- _id = GUID a4672ae5-0a6a-4ff2-9dfc-c0d8293849aa;
 					- _myState = 10240;
 					- _name = "statechart_21";
-					- _modifiedTimeWeak = 9.29.2015::9:41:20;
+					- _modifiedTimeWeak = 9.29.2015::10:0:53;
 					- _lastID = 59;
-					- weakCGTime = 9.29.2015::9:41:20;
+					- weakCGTime = 9.29.2015::10:0:53;
 					- strongCGTime = 9.28.2015::6:35:33;
 					- _multiplicity = "";
 					- _itsStateChart = { IHandle 
@@ -2093,26 +2081,26 @@ overLoaded=0;";
 						{ IState 
 							- _id = GUID 55c54c60-dff2-42a7-9b6f-ea321ca7bb35;
 							- _name = "regular";
-							- _modifiedTimeWeak = 9.29.2015::9:20:54;
+							- _modifiedTimeWeak = 9.29.2015::10:0:46;
 							- _parent = GUID 0f5fe82b-2b70-4ba1-a535-f6807538936a;
 							- _defaultTrans = ;
 							- _entryAction = { IAction 
 								- _id = GUID b44eecc9-6bdf-456e-9d6e-5ece852f07eb;
 								- _myState = 4096;
-								- _modifiedTimeWeak = 1.2.1990::0:0:0;
+								- _modifiedTimeWeak = 9.29.2015::10:0:46;
 								- _body = "mode=1;";
 							}
 						}
 						{ IState 
 							- _id = GUID 8a81982a-779b-4313-9fbd-dcf2cc4ff7bb;
 							- _name = "freight";
-							- _modifiedTimeWeak = 9.29.2015::9:20:54;
+							- _modifiedTimeWeak = 9.29.2015::10:0:53;
 							- _parent = GUID 0f5fe82b-2b70-4ba1-a535-f6807538936a;
 							- _defaultTrans = ;
 							- _entryAction = { IAction 
 								- _id = GUID b54c3ee9-681f-482b-af07-a3f85585e087;
 								- _myState = 4096;
-								- _modifiedTimeWeak = 1.2.1990::0:0:0;
+								- _modifiedTimeWeak = 9.29.2015::10:0:53;
 								- _body = "mode=2;";
 							}
 						}
@@ -2163,7 +2151,7 @@ overLoaded=0;";
 							- _defaultTrans = ;
 						}
 					}
-					- _version = 9.29.2015::19:41:27;
+					- _version = 9.29.2015::20:0:53;
 					- _baseVersion = 1.2.1990::0:0:0;
 					- _diagram = GUID ab7c18d9-fbad-43af-9f1c-b53ea98d5e84;
 					- Views = { IRPYRawContainer 
@@ -2299,8 +2287,8 @@ overLoaded=0;";
 								}
 							}
 							- _name = "statechartdiagram_0";
-							- _modifiedTimeWeak = 9.29.2015::9:41:14;
-							- _lastModifiedTime = "9.29.2015::9:41:27";
+							- _modifiedTimeWeak = 9.29.2015::10:0:53;
+							- _lastModifiedTime = "9.29.2015::10:0:53";
 							- _graphicChart = { CGIStateChart 
 								- _id = GUID a4141694-5001-429f-b704-f8606b8fbc8a;
 								- m_type = 0;
