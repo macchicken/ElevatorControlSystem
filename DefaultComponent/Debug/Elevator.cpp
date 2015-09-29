@@ -266,10 +266,12 @@ bool Elevator::needStop() {
     		direction = 0; 
     }
     
-    if (doorOpen == 1)
+    if (doorOpen == 1){
+    	GEN(evOpen);
     	return true;
-    else
+    }else{
     	return false;
+    }
     //#]
 }
 
@@ -1134,7 +1136,7 @@ IOxfReactive::TakeEventStatus Elevator::state_1_processEvent() {
                     //## transition 1 
                     if(currLoad<=MAX_LOAD)
                         {
-                            NOTIFY_TRANSITION_STARTED("36");
+                            NOTIFY_TRANSITION_STARTED("34");
                             NOTIFY_TRANSITION_STARTED("1");
                             popNullTransition();
                             NOTIFY_STATE_EXITED("ROOT.Active.state_1.overLoad");
@@ -1149,24 +1151,24 @@ IOxfReactive::TakeEventStatus Elevator::state_1_processEvent() {
                             state_1_active = idle;
                             state_1_timeout = scheduleTimeout(600, "ROOT.Active.state_1.idle");
                             NOTIFY_TRANSITION_TERMINATED("1");
-                            NOTIFY_TRANSITION_TERMINATED("36");
+                            NOTIFY_TRANSITION_TERMINATED("34");
                             res = eventConsumed;
                         }
                     else
                         {
+                            NOTIFY_TRANSITION_STARTED("34");
                             NOTIFY_TRANSITION_STARTED("36");
-                            NOTIFY_TRANSITION_STARTED("38");
                             popNullTransition();
                             NOTIFY_STATE_EXITED("ROOT.Active.state_1.overLoad");
-                            //#[ transition 38 
-                            cout<<"over load"<<endl;
+                            //#[ transition 36 
+                            overLoaded=1;
                             //#]
                             NOTIFY_STATE_ENTERED("ROOT.Active.state_1.door_open");
                             state_1_subState = door_open;
                             state_1_active = door_open;
                             state_1_timeout = scheduleTimeout(4000, "ROOT.Active.state_1.door_open");
-                            NOTIFY_TRANSITION_TERMINATED("38");
                             NOTIFY_TRANSITION_TERMINATED("36");
+                            NOTIFY_TRANSITION_TERMINATED("34");
                             res = eventConsumed;
                         }
                 }
@@ -1223,28 +1225,6 @@ IOxfReactive::TakeEventStatus Elevator::idle_handleEvent() {
                                     NOTIFY_TRANSITION_TERMINATED("7");
                                     NOTIFY_TRANSITION_TERMINATED("5");
                                     NOTIFY_TRANSITION_TERMINATED("4");
-                                    res = eventConsumed;
-                                }
-                        }
-                }
-            else
-                {
-                    //## transition 34 
-                    if(doorOpen==1)
-                        {
-                            if(TRUE)
-                                {
-                                    NOTIFY_TRANSITION_STARTED("34");
-                                    NOTIFY_TRANSITION_STARTED("35");
-                                    popNullTransition();
-                                    cancel(state_1_timeout);
-                                    NOTIFY_STATE_EXITED("ROOT.Active.state_1.idle");
-                                    NOTIFY_STATE_ENTERED("ROOT.Active.state_1.door_open");
-                                    state_1_subState = door_open;
-                                    state_1_active = door_open;
-                                    state_1_timeout = scheduleTimeout(4000, "ROOT.Active.state_1.door_open");
-                                    NOTIFY_TRANSITION_TERMINATED("35");
-                                    NOTIFY_TRANSITION_TERMINATED("34");
                                     res = eventConsumed;
                                 }
                         }

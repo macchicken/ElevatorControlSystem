@@ -4,7 +4,7 @@ I-Logix-RPY-Archive version 8.11.0 * 9499822
 	- size = 10;
 	- value = "DefaultComponent\\Debug\\Default.cpp" 9.29.2015::7:36:47
 	"DefaultComponent\\Debug\\Default.h" 9.29.2015::7:36:46
-	"DefaultComponent\\Debug\\Elevator.cpp" 9.29.2015::9:21:33
+	"DefaultComponent\\Debug\\Elevator.cpp" 9.29.2015::9:44:40
 	"DefaultComponent\\Debug\\Elevator.h" 9.29.2015::9:7:15
 	"DefaultComponent\\Debug\\Floor.cpp" 9.29.2015::6:18:35
 	"DefaultComponent\\Debug\\Floor.h" 9.28.2015::11:20:38
@@ -32,7 +32,7 @@ I-Logix-RPY-Archive version 8.11.0 * 9499822
 	- _name = "Elevator";
 	- _id = GUID e2d4b5e4-957c-4e08-9817-ef7a4ec4e4c9;
 }
-- genTime = 9.29.2015::9:21:33;
+- genTime = 9.29.2015::9:44:40;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = "Default.sbs";
@@ -50,7 +50,7 @@ I-Logix-RPY-Archive version 8.11.0 * 9499822
 	- _name = "Default";
 	- _id = GUID 7888e5a7-3deb-4e9a-aa52-542a3bdcede8;
 }
-- genTime = 9.29.2015::9:21:33;
+- genTime = 9.29.2015::9:44:40;
 - hElement = { IHandle 
 	- _m2Class = "ICodeGenConfigInfo";
 	- _filename = "DefaultComponent.cmp";
@@ -59,7 +59,7 @@ I-Logix-RPY-Archive version 8.11.0 * 9499822
 	- _name = "DefaultComponent\\Debug";
 	- _id = GUID 6c4090a0-b048-4a6a-b6b7-60db34f185ad;
 }
-- genTime = 9.29.2015::9:21:33;
+- genTime = 9.29.2015::9:44:40;
 - hElement = { IHandle 
 	- _m2Class = "IClass";
 	- _filename = "Default.sbs";
