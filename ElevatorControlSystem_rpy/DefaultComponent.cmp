@@ -1,10 +1,9 @@
 I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 { IComponent 
-	- _id = GUID a30fbc67-dfef-4ec4-adfb-2016afd5a08e;
+	- _id = GUID 78aef2d2-bd7a-4621-a42a-52d6844b9069;
 	- _myState = 139264;
 	- _name = "DefaultComponent";
-	- _modifiedTimeWeak = 9.29.2015::6:17:51;
-	- _lastID = 1;
+	- _modifiedTimeWeak = 10.1.2015::2:8:25;
 	- m_buildType = Executable;
 	- m_libraries = "";
 	- m_additionalSources = "";
@@ -12,10 +11,10 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 	- m_includePath = "";
 	- m_initializationCode = "";
 	- m_folder = { IFolder 
-		- _id = GUID eea90be6-12bc-405b-b68c-577fc491bc90;
+		- _id = GUID 76aafbb6-facf-4d16-bb2c-937f26e8c7a7;
 		- _myState = 73728;
 		- _name = "Files";
-		- _modifiedTimeWeak = 8.23.2015::22:15:59;
+		- _modifiedTimeWeak = 9.15.2015::13:37:9;
 		- m_path = "";
 		- Elements = { IRPYRawContainer 
 			- size = 0;
@@ -26,83 +25,13 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 	}
 	- m_configActive = { ICodeGenConfigInfoHandle 
 		- _m2Class = "ICodeGenConfigInfo";
-		- _id = GUID 6c4090a0-b048-4a6a-b6b7-60db34f185ad;
+		- _id = GUID 0cafc47d-0a2c-4293-abcf-243b654a42fe;
 	}
 	- Configs = { IRPYRawContainer 
-		- size = 2;
+		- size = 1;
 		- value = 
 		{ ICodeGenConfigInfo 
-			- _id = GUID 8277b9e7-b3ee-4e4f-8332-f46b44f131e5;
-			- _myState = 8192;
-			- _name = "DefaultConfig";
-			- _modifiedTimeWeak = 9.28.2015::5:32:33;
-			- HyperLinks = { IRPYRawContainer 
-				- size = 2;
-				- value = 
-				{ IMHyperLink 
-					- _id = GUID b051e2d7-e8e2-403e-99c3-13c7ce5ba09c;
-					- _modifiedTimeWeak = 1.2.1990::0:0:0;
-					- _dependsOn = { INObjectHandle 
-						- _m2Class = "";
-					}
-					- _linkDispName = "Edit Makefile";
-					- _linkType = "FREE";
-					- _linkTarget = "D:\\IBM\\Rational\\Rhapsody\\HelloWorld\\DefaultComponent\\DefaultConfig\\DefaultComponent.mak";
-					- isConfigurationFileHyperLink = 1;
-				}
-				{ IMHyperLink 
-					- _id = GUID 463b59dd-323a-40c1-8ca2-41a7fc165971;
-					- _modifiedTimeWeak = 1.2.1990::0:0:0;
-					- _dependsOn = { INObjectHandle 
-						- _m2Class = "";
-					}
-					- _linkDispName = "Edit Main File";
-					- _linkType = "FREE";
-					- _linkTarget = "D:\\IBM\\Rational\\Rhapsody\\HelloWorld\\DefaultComponent\\DefaultConfig\\MainDefaultComponent";
-					- isConfigurationFileHyperLink = 1;
-				}
-			}
-			- _scopeType = Explicit;
-			- _libraries = "";
-			- _additionalSources = "";
-			- _standardHeaders = "";
-			- _includePath = "";
-			- _targetMain = "";
-			- _instrumentation = None;
-			- _timeModel = RealTime;
-			- m_generateActors = 1;
-			- _statechartImplementation = Flat;
-			- _initializationCode = "";
-			- _checksList = 0 ;
-			- ScopeElements = { IRPYRawContainer 
-				- size = 0;
-			}
-			- InitialInstances = { IRPYRawContainer 
-				- size = 0;
-			}
-			- _root = { IFolder 
-				- _id = GUID b4a01122-3496-495c-b473-fe48079ace38;
-				- _myState = 8192;
-				- _name = "DefaultConfig";
-				- _modifiedTimeWeak = 1.2.1990::0:0:0;
-				- m_path = "";
-				- Elements = { IRPYRawContainer 
-					- size = 0;
-				}
-				- Files = { IRPYRawContainer 
-					- size = 0;
-				}
-			}
-			- weakCGTime = 9.28.2015::5:32:33;
-			- strongCGTime = 1.2.1990::0:0:0;
-			- AnimScopeElements = { IRPYRawContainer 
-				- size = 0;
-			}
-			- m_allInAnimScope = 1;
-			- m_generateUsecases = 0;
-		}
-		{ ICodeGenConfigInfo 
-			- _id = GUID 6c4090a0-b048-4a6a-b6b7-60db34f185ad;
+			- _id = GUID 0cafc47d-0a2c-4293-abcf-243b654a42fe;
 			- _myState = 8192;
 			- _properties = { IPropertyContainer 
 				- Subjects = { IRPYRawContainer 
@@ -111,7 +40,7 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 					{ IPropertySubject 
 						- _Name = "CPP_CG";
 						- Metaclasses = { IRPYRawContainer 
-							- size = 2;
+							- size = 3;
 							- value = 
 							{ IPropertyMetaclass 
 								- _Name = "Class";
@@ -131,14 +60,31 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 								}
 							}
 							{ IPropertyMetaclass 
-								- _Name = "Package";
+								- _Name = "Operation";
 								- Properties = { IRPYRawContainer 
 									- size = 1;
+									- value = 
+									{ IProperty 
+										- _Name = "ImplementationProlog";
+										- _Value = "";
+										- _Type = MultiLine;
+									}
+								}
+							}
+							{ IPropertyMetaclass 
+								- _Name = "Package";
+								- Properties = { IRPYRawContainer 
+									- size = 2;
 									- value = 
 									{ IProperty 
 										- _Name = "ImpIncludes";
 										- _Value = "<iostream>";
 										- _Type = String;
+									}
+									{ IProperty 
+										- _Name = "ImplementationProlog";
+										- _Value = "using namespace std;";
+										- _Type = MultiLine;
 									}
 								}
 							}
@@ -146,31 +92,31 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 					}
 				}
 			}
-			- _name = "Debug";
-			- _modifiedTimeWeak = 9.29.2015::6:18:0;
+			- _name = "DefaultConfig";
+			- _modifiedTimeWeak = 9.30.2015::4:28:47;
 			- HyperLinks = { IRPYRawContainer 
 				- size = 2;
 				- value = 
 				{ IMHyperLink 
-					- _id = GUID 846c54de-681b-4ead-b730-40839043acac;
+					- _id = GUID 1ce74c90-479c-40f6-8462-a785e395e69c;
 					- _modifiedTimeWeak = 1.2.1990::0:0:0;
 					- _dependsOn = { INObjectHandle 
 						- _m2Class = "";
 					}
 					- _linkDispName = "Edit Makefile";
 					- _linkType = "FREE";
-					- _linkTarget = "D:\\IBM\\Rational\\Rhapsody\\CountDown\\DefaultComponent\\configuration_0\\DefaultComponent.mak";
+					- _linkTarget = "E:\\Model based\\Project\\DefaultComponent\\DefaultConfig\\DefaultComponent.mak";
 					- isConfigurationFileHyperLink = 1;
 				}
 				{ IMHyperLink 
-					- _id = GUID cb314cb4-9113-48ac-b87d-22d3ff201dee;
+					- _id = GUID 870fca85-1f93-4f34-a1d4-9de913fd36a0;
 					- _modifiedTimeWeak = 1.2.1990::0:0:0;
 					- _dependsOn = { INObjectHandle 
 						- _m2Class = "";
 					}
 					- _linkDispName = "Edit Main File";
 					- _linkType = "FREE";
-					- _linkTarget = "D:\\IBM\\Rational\\Rhapsody\\CountDown\\DefaultComponent\\configuration_0\\MainDefaultComponent";
+					- _linkTarget = "E:\\Model based\\Project\\DefaultComponent\\DefaultConfig\\MainDefaultComponent";
 					- isConfigurationFileHyperLink = 1;
 				}
 			}
@@ -190,22 +136,46 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 				- size = 0;
 			}
 			- InitialInstances = { IRPYRawContainer 
-				- size = 1;
+				- size = 4;
 				- value = 
 				{ IHandle 
 					- _m2Class = "IClass";
 					- _filename = "Default.sbs";
 					- _subsystem = "Default";
 					- _class = "";
+					- _name = "Elevator";
+					- _id = GUID ccc65604-a30e-4f05-a612-b575200a91ec;
+				}
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "Default.sbs";
+					- _subsystem = "Default";
+					- _class = "";
+					- _name = "Floor";
+					- _id = GUID 54e4cb9c-0f47-47f8-9a8b-139afb747bdf;
+				}
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "Default.sbs";
+					- _subsystem = "Default";
+					- _class = "";
+					- _name = "LevelButton";
+					- _id = GUID 55db830b-424a-4f17-b56c-e2ee495dfef7;
+				}
+				{ IHandle 
+					- _m2Class = "IClass";
+					- _filename = "Default.sbs";
+					- _subsystem = "Default";
+					- _class = "";
 					- _name = "SystemController";
-					- _id = GUID 68e2b1bc-ef93-44a5-9c7a-a03528d51cbd;
+					- _id = GUID 9f3e0989-e423-422d-8974-a567a0753238;
 				}
 			}
 			- _root = { IFolder 
-				- _id = GUID 444b90fd-c36a-48fe-b45c-1fc81f04166a;
+				- _id = GUID 0492df97-df90-4aa0-a924-9f3fb83e1dc8;
 				- _myState = 8192;
-				- _name = "Debug";
-				- _modifiedTimeWeak = 8.30.2015::7:48:16;
+				- _name = "DefaultConfig";
+				- _modifiedTimeWeak = 1.2.1990::0:0:0;
 				- m_path = "";
 				- Elements = { IRPYRawContainer 
 					- size = 0;
@@ -214,8 +184,8 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 					- size = 0;
 				}
 			}
-			- weakCGTime = 9.29.2015::6:18:0;
-			- strongCGTime = 9.29.2015::6:18:0;
+			- weakCGTime = 9.30.2015::4:28:47;
+			- strongCGTime = 9.30.2015::4:28:47;
 			- AnimScopeElements = { IRPYRawContainer 
 				- size = 0;
 			}
@@ -224,7 +194,7 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 		}
 	}
 	- HandlesInMe = { IRPYRawContainer 
-		- size = 2;
+		- size = 4;
 		- value = 
 		{ IHandle 
 			- _m2Class = "ISubsystem";
@@ -232,15 +202,31 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 			- _subsystem = "";
 			- _class = "";
 			- _name = "Default";
-			- _id = GUID 7888e5a7-3deb-4e9a-aa52-542a3bdcede8;
+			- _id = GUID 2b1bfd46-f404-466a-af64-ee8e7ff13c39;
 		}
 		{ IHandle 
-			- _m2Class = "ISubsystem";
-			- _filename = "std.sbs";
-			- _subsystem = "Default";
+			- _m2Class = "IProfile";
+			- _filename = "CGCompatibilityPre81Cpp.sbs";
+			- _subsystem = "";
 			- _class = "";
-			- _name = "std";
-			- _id = GUID 1572de2c-2215-46be-8b6f-b1d995e0edcd;
+			- _name = "CGCompatibilityPre81Cpp";
+			- _id = GUID dcd2cdb5-4c74-4d47-99ca-1b358b271e5f;
+		}
+		{ IHandle 
+			- _m2Class = "IProfile";
+			- _filename = "CGCompatibilityPre812Cpp.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "CGCompatibilityPre812Cpp";
+			- _id = GUID 3026d3ea-02b4-49ae-b086-6982c27412f0;
+		}
+		{ IHandle 
+			- _m2Class = "IProfile";
+			- _filename = "CGCompatibilityPre813Cpp.sbs";
+			- _subsystem = "";
+			- _class = "";
+			- _name = "CGCompatibilityPre813Cpp";
+			- _id = GUID 803c9619-7509-44c3-bfdf-6fee2352ab55;
 		}
 	}
 	- VariationPoints = { IRPYRawContainer 
@@ -249,7 +235,7 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 	- SelectedVariants = { IRPYRawContainer 
 		- size = 0;
 	}
-	- weakCGTime = 9.29.2015::6:17:51;
+	- weakCGTime = 10.1.2015::2:8:25;
 	- strongCGTime = 1.2.1990::0:0:0;
 }
 

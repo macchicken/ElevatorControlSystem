@@ -1,11 +1,13 @@
 I-Logix-RPY-Archive version 8.11.0 * 9499822
 
 - filesTable = { IRPYRawContainer 
-	- size = 4;
+	- size = 6;
 	- value = "ElevatorControlSystem.rpy" ""
+	"ElevatorControlSystem_rpy\\CGCompatibilityPre812Cpp.sbs" "CGCompatibilityPre812Cpp"
+	"ElevatorControlSystem_rpy\\CGCompatibilityPre813Cpp.sbs" "CGCompatibilityPre813Cpp"
+	"ElevatorControlSystem_rpy\\CGCompatibilityPre81Cpp.sbs" "CGCompatibilityPre81Cpp"
 	"ElevatorControlSystem_rpy\\Default.sbs" "Default"
 	"ElevatorControlSystem_rpy\\DefaultComponent.cmp" "DefaultComponent"
-	"ElevatorControlSystem_rpy\\std.sbs" "Default::std"
 	
 }
 
