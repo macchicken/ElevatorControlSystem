@@ -3,7 +3,7 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 	- _id = GUID f1c248bf-1144-4a28-86dc-0d9960d32332;
 	- _myState = 8192;
 	- _name = "ElevatorControlSystem";
-	- _modifiedTimeWeak = 10.1.2015::2:17:25;
+	- _modifiedTimeWeak = 10.6.2015::1:1:12;
 	- _lastID = 3;
 	- _UserColors = { IRPYRawContainer 
 		- size = 16;
@@ -1041,6 +1041,9 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 			}
 		}
 	}
+	- MSCS = { IRPYRawContainer 
+		- size = 0;
+	}
 	- Components = { IRPYRawContainer 
 		- size = 1;
 		- value = 
@@ -1159,7 +1162,7 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 			}
 			- _name = "panel";
 			- _modifiedTimeWeak = 1.2.1990::0:0:0;
-			- _lastModifiedTime = "10.1.2015::2:17:28";
+			- _lastModifiedTime = "10.5.2015::23:56:6";
 			- _graphicChart = { CGIClassChart 
 				- _id = GUID bd1708f0-a23c-436a-8518-ab8d6c77ace4;
 				- m_type = 0;

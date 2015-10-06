@@ -123,8 +123,8 @@ $body]]
 			- _id = GUID c4916b7f-5ca2-41a3-b8a9-6ac22b145b51;
 		}
 	}
-	- _modifiedTimeWeak = 10.1.2015::2:8:25;
-	- weakCGTime = 10.1.2015::2:8:25;
+	- _modifiedTimeWeak = 10.6.2015::1:1:12;
+	- weakCGTime = 10.6.2015::1:1:12;
 	- strongCGTime = 2.16.2014::10:0:46;
 	- _defaultComposite = GUID 9f8d194c-26f0-4f34-a01e-56e2e9e51202;
 	- _eventsBaseID = -1;

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Elevator
-//!	Generated Date	: Thu, 1, Oct 2015  
+//!	Generated Date	: Tue, 6, Oct 2015  
 	File Path	: DefaultComponent\DefaultConfig\Elevator.cpp
 *********************************************************************/
 
@@ -1233,29 +1233,37 @@ IOxfReactive::TakeEventStatus Elevator::state_12_processEvent() {
         {
             if(IS_EVENT_TYPE_OF(evFreight_Default_id))
                 {
-                    NOTIFY_TRANSITION_STARTED("22");
-                    NOTIFY_STATE_EXITED("ROOT.active.state_12.regular");
-                    NOTIFY_STATE_ENTERED("ROOT.active.state_12.freight");
-                    state_12_subState = freight;
-                    state_12_active = freight;
-                    //#[ state active.state_12.freight.(Entry) 
-                    mode = 2;
-                    //#]
-                    NOTIFY_TRANSITION_TERMINATED("22");
-                    res = eventConsumed;
+                    //## transition 22 
+                    if(!IS_IN(running))
+                        {
+                            NOTIFY_TRANSITION_STARTED("22");
+                            NOTIFY_STATE_EXITED("ROOT.active.state_12.regular");
+                            NOTIFY_STATE_ENTERED("ROOT.active.state_12.freight");
+                            state_12_subState = freight;
+                            state_12_active = freight;
+                            //#[ state active.state_12.freight.(Entry) 
+                            mode = 2;
+                            //#]
+                            NOTIFY_TRANSITION_TERMINATED("22");
+                            res = eventConsumed;
+                        }
                 }
             else if(IS_EVENT_TYPE_OF(evMaintenance_Default_id))
                 {
-                    NOTIFY_TRANSITION_STARTED("27");
-                    NOTIFY_STATE_EXITED("ROOT.active.state_12.regular");
-                    NOTIFY_STATE_ENTERED("ROOT.active.state_12.maintenance");
-                    state_12_subState = maintenance;
-                    state_12_active = maintenance;
-                    //#[ state active.state_12.maintenance.(Entry) 
-                    mode = 3;
-                    //#]
-                    NOTIFY_TRANSITION_TERMINATED("27");
-                    res = eventConsumed;
+                    //## transition 27 
+                    if(!IS_IN(running))
+                        {
+                            NOTIFY_TRANSITION_STARTED("27");
+                            NOTIFY_STATE_EXITED("ROOT.active.state_12.regular");
+                            NOTIFY_STATE_ENTERED("ROOT.active.state_12.maintenance");
+                            state_12_subState = maintenance;
+                            state_12_active = maintenance;
+                            //#[ state active.state_12.maintenance.(Entry) 
+                            mode = 3;
+                            //#]
+                            NOTIFY_TRANSITION_TERMINATED("27");
+                            res = eventConsumed;
+                        }
                 }
             
             
@@ -1266,29 +1274,37 @@ IOxfReactive::TakeEventStatus Elevator::state_12_processEvent() {
         {
             if(IS_EVENT_TYPE_OF(evRegular_Default_id))
                 {
-                    NOTIFY_TRANSITION_STARTED("23");
-                    NOTIFY_STATE_EXITED("ROOT.active.state_12.freight");
-                    NOTIFY_STATE_ENTERED("ROOT.active.state_12.regular");
-                    state_12_subState = regular;
-                    state_12_active = regular;
-                    //#[ state active.state_12.regular.(Entry) 
-                    mode = 1;
-                    //#]
-                    NOTIFY_TRANSITION_TERMINATED("23");
-                    res = eventConsumed;
+                    //## transition 23 
+                    if(!IS_IN(running))
+                        {
+                            NOTIFY_TRANSITION_STARTED("23");
+                            NOTIFY_STATE_EXITED("ROOT.active.state_12.freight");
+                            NOTIFY_STATE_ENTERED("ROOT.active.state_12.regular");
+                            state_12_subState = regular;
+                            state_12_active = regular;
+                            //#[ state active.state_12.regular.(Entry) 
+                            mode = 1;
+                            //#]
+                            NOTIFY_TRANSITION_TERMINATED("23");
+                            res = eventConsumed;
+                        }
                 }
             else if(IS_EVENT_TYPE_OF(evMaintenance_Default_id))
                 {
-                    NOTIFY_TRANSITION_STARTED("24");
-                    NOTIFY_STATE_EXITED("ROOT.active.state_12.freight");
-                    NOTIFY_STATE_ENTERED("ROOT.active.state_12.maintenance");
-                    state_12_subState = maintenance;
-                    state_12_active = maintenance;
-                    //#[ state active.state_12.maintenance.(Entry) 
-                    mode = 3;
-                    //#]
-                    NOTIFY_TRANSITION_TERMINATED("24");
-                    res = eventConsumed;
+                    //## transition 24 
+                    if(!IS_IN(running))
+                        {
+                            NOTIFY_TRANSITION_STARTED("24");
+                            NOTIFY_STATE_EXITED("ROOT.active.state_12.freight");
+                            NOTIFY_STATE_ENTERED("ROOT.active.state_12.maintenance");
+                            state_12_subState = maintenance;
+                            state_12_active = maintenance;
+                            //#[ state active.state_12.maintenance.(Entry) 
+                            mode = 3;
+                            //#]
+                            NOTIFY_TRANSITION_TERMINATED("24");
+                            res = eventConsumed;
+                        }
                 }
             
             
@@ -1299,29 +1315,37 @@ IOxfReactive::TakeEventStatus Elevator::state_12_processEvent() {
         {
             if(IS_EVENT_TYPE_OF(evFreight_Default_id))
                 {
-                    NOTIFY_TRANSITION_STARTED("25");
-                    NOTIFY_STATE_EXITED("ROOT.active.state_12.maintenance");
-                    NOTIFY_STATE_ENTERED("ROOT.active.state_12.freight");
-                    state_12_subState = freight;
-                    state_12_active = freight;
-                    //#[ state active.state_12.freight.(Entry) 
-                    mode = 2;
-                    //#]
-                    NOTIFY_TRANSITION_TERMINATED("25");
-                    res = eventConsumed;
+                    //## transition 25 
+                    if(!IS_IN(running))
+                        {
+                            NOTIFY_TRANSITION_STARTED("25");
+                            NOTIFY_STATE_EXITED("ROOT.active.state_12.maintenance");
+                            NOTIFY_STATE_ENTERED("ROOT.active.state_12.freight");
+                            state_12_subState = freight;
+                            state_12_active = freight;
+                            //#[ state active.state_12.freight.(Entry) 
+                            mode = 2;
+                            //#]
+                            NOTIFY_TRANSITION_TERMINATED("25");
+                            res = eventConsumed;
+                        }
                 }
             else if(IS_EVENT_TYPE_OF(evRegular_Default_id))
                 {
-                    NOTIFY_TRANSITION_STARTED("26");
-                    NOTIFY_STATE_EXITED("ROOT.active.state_12.maintenance");
-                    NOTIFY_STATE_ENTERED("ROOT.active.state_12.regular");
-                    state_12_subState = regular;
-                    state_12_active = regular;
-                    //#[ state active.state_12.regular.(Entry) 
-                    mode = 1;
-                    //#]
-                    NOTIFY_TRANSITION_TERMINATED("26");
-                    res = eventConsumed;
+                    //## transition 26 
+                    if(!IS_IN(running))
+                        {
+                            NOTIFY_TRANSITION_STARTED("26");
+                            NOTIFY_STATE_EXITED("ROOT.active.state_12.maintenance");
+                            NOTIFY_STATE_ENTERED("ROOT.active.state_12.regular");
+                            state_12_subState = regular;
+                            state_12_active = regular;
+                            //#[ state active.state_12.regular.(Entry) 
+                            mode = 1;
+                            //#]
+                            NOTIFY_TRANSITION_TERMINATED("26");
+                            res = eventConsumed;
+                        }
                 }
             
             

@@ -3,7 +3,7 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 	- _id = GUID 78aef2d2-bd7a-4621-a42a-52d6844b9069;
 	- _myState = 139264;
 	- _name = "DefaultComponent";
-	- _modifiedTimeWeak = 10.1.2015::2:8:25;
+	- _modifiedTimeWeak = 10.6.2015::1:1:12;
 	- m_buildType = Executable;
 	- m_libraries = "";
 	- m_additionalSources = "";
@@ -93,7 +93,7 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 				}
 			}
 			- _name = "DefaultConfig";
-			- _modifiedTimeWeak = 9.30.2015::4:28:47;
+			- _modifiedTimeWeak = 10.6.2015::0:52:35;
 			- HyperLinks = { IRPYRawContainer 
 				- size = 2;
 				- value = 
@@ -120,7 +120,7 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 					- isConfigurationFileHyperLink = 1;
 				}
 			}
-			- _scopeType = Explicit;
+			- _scopeType = Derived;
 			- _libraries = "";
 			- _additionalSources = "";
 			- _standardHeaders = "";
@@ -136,32 +136,8 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 				- size = 0;
 			}
 			- InitialInstances = { IRPYRawContainer 
-				- size = 4;
+				- size = 1;
 				- value = 
-				{ IHandle 
-					- _m2Class = "IClass";
-					- _filename = "Default.sbs";
-					- _subsystem = "Default";
-					- _class = "";
-					- _name = "Elevator";
-					- _id = GUID ccc65604-a30e-4f05-a612-b575200a91ec;
-				}
-				{ IHandle 
-					- _m2Class = "IClass";
-					- _filename = "Default.sbs";
-					- _subsystem = "Default";
-					- _class = "";
-					- _name = "Floor";
-					- _id = GUID 54e4cb9c-0f47-47f8-9a8b-139afb747bdf;
-				}
-				{ IHandle 
-					- _m2Class = "IClass";
-					- _filename = "Default.sbs";
-					- _subsystem = "Default";
-					- _class = "";
-					- _name = "LevelButton";
-					- _id = GUID 55db830b-424a-4f17-b56c-e2ee495dfef7;
-				}
 				{ IHandle 
 					- _m2Class = "IClass";
 					- _filename = "Default.sbs";
@@ -184,7 +160,7 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 					- size = 0;
 				}
 			}
-			- weakCGTime = 9.30.2015::4:28:47;
+			- weakCGTime = 10.6.2015::0:52:35;
 			- strongCGTime = 9.30.2015::4:28:47;
 			- AnimScopeElements = { IRPYRawContainer 
 				- size = 0;
@@ -193,49 +169,13 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 			- m_generateUsecases = 0;
 		}
 	}
-	- HandlesInMe = { IRPYRawContainer 
-		- size = 4;
-		- value = 
-		{ IHandle 
-			- _m2Class = "ISubsystem";
-			- _filename = "Default.sbs";
-			- _subsystem = "";
-			- _class = "";
-			- _name = "Default";
-			- _id = GUID 2b1bfd46-f404-466a-af64-ee8e7ff13c39;
-		}
-		{ IHandle 
-			- _m2Class = "IProfile";
-			- _filename = "CGCompatibilityPre81Cpp.sbs";
-			- _subsystem = "";
-			- _class = "";
-			- _name = "CGCompatibilityPre81Cpp";
-			- _id = GUID dcd2cdb5-4c74-4d47-99ca-1b358b271e5f;
-		}
-		{ IHandle 
-			- _m2Class = "IProfile";
-			- _filename = "CGCompatibilityPre812Cpp.sbs";
-			- _subsystem = "";
-			- _class = "";
-			- _name = "CGCompatibilityPre812Cpp";
-			- _id = GUID 3026d3ea-02b4-49ae-b086-6982c27412f0;
-		}
-		{ IHandle 
-			- _m2Class = "IProfile";
-			- _filename = "CGCompatibilityPre813Cpp.sbs";
-			- _subsystem = "";
-			- _class = "";
-			- _name = "CGCompatibilityPre813Cpp";
-			- _id = GUID 803c9619-7509-44c3-bfdf-6fee2352ab55;
-		}
-	}
 	- VariationPoints = { IRPYRawContainer 
 		- size = 0;
 	}
 	- SelectedVariants = { IRPYRawContainer 
 		- size = 0;
 	}
-	- weakCGTime = 10.1.2015::2:8:25;
+	- weakCGTime = 10.6.2015::1:1:12;
 	- strongCGTime = 1.2.1990::0:0:0;
 }
 

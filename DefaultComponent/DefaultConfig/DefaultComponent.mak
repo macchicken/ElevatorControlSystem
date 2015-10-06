@@ -78,10 +78,10 @@ INCLUDE_PATH= \
 ADDITIONAL_OBJS=
 
 OBJS= \
-  Elevator.obj \
-  Floor.obj \
   SystemController.obj \
+  Elevator.obj \
   LevelButton.obj \
+  Floor.obj \
   Default.obj
 
 
@@ -165,27 +165,27 @@ SOCK_LIB=
 
 
 
-Elevator.obj : Elevator.cpp Elevator.h    Default.h LevelButton.h SystemController.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Elevator.obj" "Elevator.cpp" 
-
-
-
-Floor.obj : Floor.cpp Floor.h    Default.h SystemController.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Floor.obj" "Floor.cpp" 
-
-
-
 SystemController.obj : SystemController.cpp SystemController.h    Default.h Elevator.h Floor.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SystemController.obj" "SystemController.cpp" 
 
 
 
+Elevator.obj : Elevator.cpp Elevator.h    Default.h LevelButton.h SystemController.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Elevator.obj" "Elevator.cpp" 
+
+
+
 LevelButton.obj : LevelButton.cpp LevelButton.h    Default.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"LevelButton.obj" "LevelButton.cpp" 
+
+
+
+Floor.obj : Floor.cpp Floor.h    Default.h SystemController.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Floor.obj" "Floor.cpp" 
 
 
 
@@ -222,10 +222,10 @@ $(TARGET_NAME)$(LIB_EXT) : $(OBJS) $(ADDITIONAL_OBJS) DefaultComponent.mak
 
 clean:
 	@echo Cleanup
-	if exist Elevator.obj erase Elevator.obj
-	if exist Floor.obj erase Floor.obj
 	if exist SystemController.obj erase SystemController.obj
+	if exist Elevator.obj erase Elevator.obj
 	if exist LevelButton.obj erase LevelButton.obj
+	if exist Floor.obj erase Floor.obj
 	if exist Default.obj erase Default.obj
 	if exist $(TARGET_MAIN)$(OBJ_EXT) erase $(TARGET_MAIN)$(OBJ_EXT)
 	if exist *$(OBJ_EXT) erase *$(OBJ_EXT)

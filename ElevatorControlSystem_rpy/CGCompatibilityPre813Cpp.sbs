@@ -58,8 +58,8 @@ I-Logix-RPY-Archive version 8.11.0 C++ 9499822
 			- _id = GUID c4916b7f-5ca2-41a3-b8a9-6ac22b145b51;
 		}
 	}
-	- _modifiedTimeWeak = 10.1.2015::2:8:25;
-	- weakCGTime = 10.1.2015::2:8:25;
+	- _modifiedTimeWeak = 10.6.2015::1:1:12;
+	- weakCGTime = 10.6.2015::1:1:12;
 	- strongCGTime = 3.24.2015::12:28:19;
 	- _defaultComposite = GUID 578d0ff9-3d12-4d0d-88d1-94ad6e664658;
 	- _eventsBaseID = -1;
